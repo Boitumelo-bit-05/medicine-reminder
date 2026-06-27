@@ -1,7 +1,12 @@
 # 💊 Medicine Reminder App
 
 A medication reminder app designed for elderly users with offline functionality, audio alerts, and safety features.
+# 💊 Medicine Reminder App
 
+**🔗 [Live Demo](YOUR_REPLIT_LINK_HERE)**
+https://medicine-reminder--boitumelotiheli.replit.app
+
+A medication reminder app designed for elderly users with offline functionality, audio alerts, and safety features.
 ## ✨ Features
 
 - **🔔 Audio Alerts** - Loud beeping when it's time to take medicine
