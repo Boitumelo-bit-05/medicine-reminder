@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+
+<!-- MEDICINE ALERT BANNER -->
+<div id="alert-banner" class="alert-banner" style="display:none;">
+    <div id="alert-text"></div>
+    <div id="safety-notes" style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin: 1rem 0; color: white; font-size: 14px; display: none;"></div>
+    <div style="margin-top: 1rem; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.5rem;">
+        <button class="btn-took" onclick="confirmMedicine(currentMedicineName)">✓ Took It</button>
+        <button class="btn-snooze" onclick="snoozeAlert(5)">⏰ 5 min</button>
+        <button class="btn-snooze" onclick="snoozeAlert(10)">⏰ 10 min</button>
+        <button class="btn-secondary" onclick="hideAlert()">Dismiss</button>
+    </div>
+</div>
+</div>
+   <nav>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1>💊 Medicine Reminder</h1>
+                <p class="subtitle">For Grandma</p>
+            </div>
+            <div id="online-status" style="font-size: 14px; font-weight: 600;">🟢 Online</div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- HOME SCREEN -->
+        <div id="home" class="section">
+            <div class="time-display">
+                <p class="time-label">Current time</p>
+                <p class="time" id="current-time">9:00 AM</p>
+            </div>
+
+            <div class="medicine-reminder" id="current-medicine">
+                <p class="reminder-label">Next medicine due</p>
+                <p class="medicine-name">Add a medicine to get started</p>
+            </div>
+
+            <button class="btn-primary" onclick="showSection('add-medicine')">+ Add Medicine</button>
+
+            <div class="medicines-list">
+                <h2>Today's Medicines</h2>
+                <div id="medicines-display">No medicines added yet</div>
+            </div>
+        </div>
+
+       <!-- ADD MEDICINE SCREEN -->
+        <div id="add-medicine" class="section" style="display:none;">
+            <h2>Add a Medicine</h2>
+            <form id="medicine-form">
+                <input type="text" id="med-name" placeholder="Medicine name (e.g., Heart Medicine)" required>
+                <input type="number" id="med-dosage" placeholder="Dosage (e.g., 1 tablet)" required>
+                <input type="time" id="med-time" required>
+                <label style="font-size: 12px; color: #7a6a52; display: block; margin-top: 0.5rem; font-weight: 600;">Safety Notes (optional)</label>
+                <textarea id="med-safety" placeholder="e.g., Take with food, do not drive, avoid alcohol" style="padding: 0.75rem; border: 2px solid #E8D4B0; border-radius: 8px; font-size: 13px; font-family: inherit; resize: none; min-height: 60px;"></textarea>
+                <input type="text" id="med-notes" placeholder="Additional notes (optional)" style="display: none;">
+                <button type="submit" class="btn-primary">Save Medicine</button>
+            </form>
+            <button class="btn-secondary" onclick="showSection('home')">Back</button>
+        </div>
+        
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

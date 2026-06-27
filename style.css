@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #FFF8F0;
+    color: #1a3a52;
+}
+
+nav {
+    background: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a3a52;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #7a6a52;
+}
+
+.container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.section {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.time-display {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #FFF8F0;
+}
+
+.time-label {
+    font-size: 13px;
+    color: #7a6a52;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a3a52;
+}
+
+.medicine-reminder {
+    background: linear-gradient(135deg, #FFE8D6 0%, #FFF0E0 100%);
+    border-left: 6px solid #D4AF37;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.reminder-label {
+    font-size: 12px;
+    color: #7a6a52;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.medicine-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin-bottom: 0.5rem;
+}
+
+.medicine-dosage {
+    font-size: 14px;
+    color: #7a6a52;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    background: #D4AF37;
+    color: #1a3a52;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 0.8rem;
+    background: #F0E8D8;
+    color: #1a3a52;
+    border: 1px solid #E8D4B0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #E8D4B0;
+}
+
+.medicines-list {
+    margin-top: 2rem;
+}
+
+.medicines-list h2 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #1a3a52;
+}
+
+.medicine-item {
+    background: #FDF4E8;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid #D4AF37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medicine-info h3 {
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+    color: #1a3a52;
+}
+
+.medicine-info p {
+    font-size: 12px;
+    color: #7a6a52;
+    margin: 0.2rem 0;
+}
+
+.btn-took {
+    background: #27AE60;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-took:hover {
+    background: #1E8449;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"] {
+    padding: 1rem;
+    border: 2px solid #E8D4B0;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1a3a52;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: #1a3a52;
+}
+.btn-voice {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-voice:hover {
+    background: #2980b9;
+}
+
+.btn-voice:active {
+    transform: scale(0.95);
+}
+.alert-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8C42 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.alert-banner .btn-took {
+    background: #27AE60;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+}
+
+.alert-banner .btn-secondary {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    border: 2px solid white;
+}
+.btn-snooze {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid white;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-snooze:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.btn-snooze:active {
+    transform: scale(0.95);
+}
+
+textarea {
+    font-family: inherit;
+    color: #1a3a52;
+}
+
+textarea::placeholder {
+    color: #7a6a52;
+}
+.time-group {
+    margin-bottom: 2rem;
+}
+
+.time-group-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a3a52;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #D4AF37;
+    display: inline-block;
+}
+
+.time-group .medicine-item {
+    margin-bottom: 0.8rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#online-status {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: #F0F0F0;
+}

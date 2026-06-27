@@ -1,0 +1,57 @@
+{
+  "medicines": [
+    {
+      "name": "Magnesium Glycinate",
+      "dosage": "2",
+      "time": "09:40",
+      "notes": "Sleep"
+    },
+    {
+      "name": "vitamin b6",
+      "dosage": "1",
+      "time": "23:45",
+      "notes": "",
+      "takenToday": false
+    },
+    {
+      "name": "vitamin c",
+      "dosage": "3",
+      "time": "15:30",
+      "notes": "",
+      "safety_notes": "taken with porridge",
+      "takenToday": false
+    },
+    {
+      "name": "Apple Cider",
+      "dosage": "2",
+      "time": "21:43",
+      "notes": "",
+      "safety_notes": "avoid alcohol",
+      "takenToday": false
+    },
+    {
+      "name": "Calcium",
+      "dosage": "2",
+      "time": "21:47",
+      "notes": "",
+      "safety_notes": "take with food",
+      "takenToday": false
+    },
+    {
+      "name": "Iron",
+      "dosage": "1",
+      "time": "21:49",
+      "notes": "",
+      "safety_notes": "avoid alcohol",
+      "takenToday": false
+    },
+    {
+      "name": "Zinc",
+      "dosage": "2",
+      "time": "22:30",
+      "notes": "",
+      "safety_notes": "None",
+      "takenToday": false
+    }
+  ]
+}
